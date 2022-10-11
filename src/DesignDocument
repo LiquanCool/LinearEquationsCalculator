@@ -3,9 +3,9 @@ Instance variables
     private int x1
     private int y1
     private int x2
-    private int x2
+    private int y2
 Constructor
-    public LinearEquation(int x, int y, int x2, int x2)
+    public LinearEquation(int x1, int y2, int x2, int x2)
 Methods
 public String toString() - returns original points, equation, slope, y-intercept, distance between the two points
 public double findSlope() - returns slope to nearest 100th

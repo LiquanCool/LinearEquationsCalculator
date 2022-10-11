@@ -14,7 +14,10 @@ public class EquationRunner {
         point1 = s.nextLine();
         System.out.println("Great! What is your second coordinate point?");
         point2 = s.nextLine();
-        x1 = Integer.parseInt(point1.substring(1,2));
+        x1 = Integer.parseInt(point1.substring(1, point1.indexOf(",")));
+        y1 = Integer.parseInt(point1.substring(point1.indexOf(",") + 1, point1.indexOf(")")));
+        x2 = Integer.parseInt(point2.substring(1, point1.indexOf(",")));
+        y2 = Integer.parseInt(point2.substring(point1.indexOf(",") + 1, point1.indexOf(")")));
 
     }
 }
