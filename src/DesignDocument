@@ -4,6 +4,11 @@ Instance variables
     private int y1
     private int x2
     private int y2
+    private double y3
+    private double slope;
+    private String fractionSlope;
+    private double yIntercept;
+    private double distance;
 Constructor
     public LinearEquation(int x1, int y2, int x2, int x2)
 Methods
@@ -12,6 +17,7 @@ public double findSlope() - returns slope to nearest 100th
 public double findYIntercept() - returns y intercept to nearest 100th
 public double findDistance() - returns distance to nearest 100th
 public double findY(double x) - returns y value for given x value.
+public void calculate() - runs the methods to calculate everything
 EquationRunner.java
 Variables
     String point1;

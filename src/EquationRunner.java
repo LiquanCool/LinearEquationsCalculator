@@ -15,9 +15,19 @@ public class EquationRunner {
         System.out.println("Great! What is your second coordinate point?");
         point2 = s.nextLine();
         x1 = Integer.parseInt(point1.substring(1, point1.indexOf(",")));
+        System.out.println(x1);
         y1 = Integer.parseInt(point1.substring(point1.indexOf(",") + 1, point1.indexOf(")")));
+        System.out.println(y1);
         x2 = Integer.parseInt(point2.substring(1, point1.indexOf(",")));
-        y2 = Integer.parseInt(point2.substring(point1.indexOf(",") + 1, point1.indexOf(")")));
+        System.out.println(x2);
+        y2 = Integer.parseInt(point2.substring(point2.indexOf(",") + 1, point2.indexOf(")")));
+        System.out.println(y2);
+        LinearEquation equation = new LinearEquation(x1,y1,x2,y2);
+        equation.calculate(); //runs the
+        System.out.print(equation);
+        System.out.println("Enter a x value to find a y value for: ");
+        x3 = s.nextDouble();
+        System.out.println("The y coordinate point for that x coordinate point is: " + "(" + x3 + "," + equation.findY(x3) + ")");
 
     }
 }
