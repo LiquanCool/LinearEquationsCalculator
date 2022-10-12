@@ -23,7 +23,7 @@ public class EquationRunner {
         y2 = Integer.parseInt(point2.substring(point2.indexOf(",") + 1, point2.indexOf(")")));
         System.out.println(y2);
         LinearEquation equation = new LinearEquation(x1,y1,x2,y2);
-        equation.calculate(); //runs the
+        equation.calculate(); //runs the methods
         System.out.print(equation);
         System.out.println("Enter a x value to find a y value for: ");
         x3 = s.nextDouble();

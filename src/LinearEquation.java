@@ -26,7 +26,7 @@ public class LinearEquation {
         return slope;
     }
     public double findYIntercept(){
-        double yIntercept = ((double)((int)(((double)y1-(x1*slope))*100+.5)))/100;
+        double yIntercept = ((double)((int)(((double)y1-(x1*slope))*100+.5)))/100;//fix this
         this.yIntercept = yIntercept;
         return yIntercept;
     }
