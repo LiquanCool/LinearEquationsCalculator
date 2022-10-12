@@ -1,0 +1,41 @@
+LinearEquation Class
+Instance variables
+    private int x1
+    private int y1
+    private int x2
+    private int y2
+    private double y3
+    private double slope;
+    private String fractionSlope;
+    private double yIntercept;
+    private double distance;
+Constructor
+    public LinearEquation(int x1, int y2, int x2, int x2)
+Methods
+public String toString() - returns original points, equation, slope, y-intercept, distance between the two points
+public double findSlope() - returns slope to nearest 100th
+public double findYIntercept() - returns y intercept to nearest 100th
+public double findDistance() - returns distance to nearest 100th
+public double findY(double x) - returns y value for given x value.
+public void calculate() - runs the methods to calculate everything
+EquationRunner.java
+Variables
+    String point1;
+    String point2;
+    int x1
+    int y1
+    int x2
+    int y2
+    double x3
+    Scanner s
+    Scanner sDouble
+Steps
+    Step 1: Ask for the first coordinate point,
+    use scanner variable s to store it in point1,
+    parse the string and store in variables x1 y1 after converting to int using Integer.parseInt().
+    Step 2: Repeat step one for second coordinate point with variables point2 x2 y2 instead
+    Step 3: Use the variables as arguments for the constructor.
+    Step 4: Print the linear equation, slope, y-intercept,
+    and distance using the methods in LinearEquation Class.
+    Step 5: Ask for an x value using scanner variable sInt to find the y value and store it in x3.
+    Step 6: Use a method to find the y value for the inputted x value and print both.
