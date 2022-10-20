@@ -37,10 +37,10 @@ public class LinearEquation {
         this.distance = distance;
         return distance;
     }
-    public double findY(double x3){//finds the y value for the x value argument
+    public String findY(double x3){//finds the y value for the x value argument
         double y3 = x3*slope+yIntercept;
         this.y3 = y3;
-        return y3;
+        return df.format(y3);
     }
     public String toString(){//returns string with the information
         return "Point 1: " + "(" + x1 + "," + y1 + ")\n"
