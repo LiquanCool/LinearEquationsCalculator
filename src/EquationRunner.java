@@ -16,7 +16,7 @@ public class EquationRunner {
         point2 = s.nextLine();
         x1 = Integer.parseInt(point1.substring(1, point1.indexOf(",")));//stores the values in variables
         y1 = Integer.parseInt(point1.substring(point1.indexOf(",") + 1, point1.indexOf(")")));
-        x2 = Integer.parseInt(point2.substring(1, point1.indexOf(",")));
+        x2 = Integer.parseInt(point2.substring(1, point2.indexOf(",")));
         y2 = Integer.parseInt(point2.substring(point2.indexOf(",") + 1, point2.indexOf(")")));
         LinearEquation equation = new LinearEquation(x1,y1,x2,y2);
         equation.calculate(); //runs the methods
